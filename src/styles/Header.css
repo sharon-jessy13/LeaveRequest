@@ -230,42 +230,42 @@
 
 /* 🎨 Unique colors for each leave type */
 .cl {
-    background: #e8f3ff;
+    background: #EFF6FF;
     margin-left: 20px;
-    color: #1976d2;
+    color: #EFF6FF;
 }
 
 .sl {
-    background: #f3e8ff;
+    background: #FAF5FF;
     /* lavender */
-    color: #6a1b9a;
+    color:#FAF5FF;
 }
 
 .pl {
-    background: #fff3e0;
+    background: #F0FDF4;
     /* peach */
-    color: #ef6c00;
+    color: #F0FDF4;
 }
 
 .wfh {
-    background: #f0fdf4;
+    background: #FEFCE8;
     /* mint green */
-    color: #2e7d32;
+    color: #FEFCE8;
 }
 
 .long-sl {
-    background: #ede7f6;
+    background: #FDF2F8;
     /* purple tint */
-    color: #4527a0;
+    color: #FDF2F8;
 }
 
 .extra-sl {
-    background: #e0f7fa;
+    background: #EEF2Ff;
     /* aqua */
-    color: #00695c;
+    color: #EEF2FF;
 }
 
 .maternity {
-    background: #fff8e1;
-    color: #f9a825;
+    background: #F0FDF4;;
+    color: #F0FDF4;
 }
