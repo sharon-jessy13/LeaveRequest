@@ -46,23 +46,23 @@ export default function Header() {
                 <Grid container alignItems="center">
                     {/* Employee Details */}
 
-                    <div class="employee-details">
-                        <div class="avatar-wrapper">
-                            <img src={avthar} class="avatar" />
-                            <span class="online-indicator"></span>
+                    <div className="employee-details">
+                        <div className="avatar-wrapper">
+                            <img src={avthar} className="avatar" />
+                            <span className="online-indicator"></span>
                         </div>
-                        <div class="employee-info">
+                        <div className="employee-info">
                             <div>
                                 <strong>{employee.name} • Gen ID: {employee.genId}</strong>
                             </div>
-                            <div class="employee-email">{employee.email}</div>
+                            <div className="employee-email">{employee.email}</div>
                         </div>
                     </div>
 
                     <Divider orientation="vertical" flexItem sx={{ mx: 1 }} />
 
                     {/* Designation */}
-                    <Grid item xs={12} sm="auto" sx={{ px: 2 }}>
+                    <Grid  size={{xs:12,sm:"auto"}} sx={{ px: 2 }}>
                         <Typography variant="body2" color="text.secondary">Designation</Typography>
                         <Typography fontWeight="bold">{employee.designation}</Typography>
                     </Grid>
@@ -73,7 +73,7 @@ export default function Header() {
 
 
                     {/* Division */}
-                    <Grid item xs={12} sm="auto" sx={{ px: 2 }}>
+                    <Grid  size={{xs:12,sm:"auto"}}  sx={{ px: 2 }}>
                         <Typography variant="body2" color="text.secondary">Division</Typography>
                         <Typography fontWeight="bold">{employee.division}</Typography>
                     </Grid>
@@ -84,7 +84,7 @@ export default function Header() {
 
 
                     {/* Manager */}
-                    <Grid item xs={12} sm="auto" sx={{ px: 2 }}>
+                    <Grid  size={{xs:12,sm:"auto"}} sx={{ px: 2 }}>
                         <Typography variant="body2" color="text.secondary">Manager</Typography>
                         <Typography fontWeight="bold">{employee.manager}</Typography>
                     </Grid>
