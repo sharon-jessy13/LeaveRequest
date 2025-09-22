@@ -104,6 +104,7 @@ textarea {
     border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box;
+    background-color: #FFFFFF;
 }
 textarea { height: auto; }
 
@@ -266,6 +267,7 @@ textarea { height: auto; }
     color: #000000;
     resize: vertical;
     padding-top: 36px;
+    background-color: #FFFFFF;
 }
 
 /* --- Footer --- */

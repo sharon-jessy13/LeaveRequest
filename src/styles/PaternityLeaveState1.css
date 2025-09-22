@@ -124,7 +124,7 @@ body {
     box-sizing: border-box;
     font-weight: 400;
     color: #000000;
-    
+    background-color: #FFFFFF;
 }
 
 .leaveForm-select,
@@ -140,6 +140,7 @@ body {
     height: 90px;
     resize: vertical;
     padding-top: 36px;
+    background-color: #FFFFFF;
     /* resize: vertical; */
 }
 

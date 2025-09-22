@@ -199,6 +199,7 @@ textarea {
     box-sizing: border-box;
     width: 416px;
     height: 48px;
+    background-color: #FFFFFF;
 }
 
 textarea {
@@ -215,6 +216,7 @@ textarea {
     resize: vertical;
     padding-top: 36px;
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 /* --- Radio & Checkbox Buttons --- */
