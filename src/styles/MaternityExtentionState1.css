@@ -13,7 +13,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
 
-    width: 100%;
+    margin-left: 24px;
     min-width: 1392px;
 
     padding: 24px;
@@ -208,7 +208,7 @@ textarea {
 
 
 .maternityExtention-textarea {
-    min-width: 1440px;
+    min-width: 1420px;
     height: 90px;
     font-size: 14px;
     font-weight: 400;
@@ -484,7 +484,7 @@ textarea {
 .maternityExtention-btn-cancel {
     background-color: #fff;
     border-color: #38AEE0;
-    color: #38AEE0;
+    color: #202224;
 }
 
 .maternityExtention-btn-submit {

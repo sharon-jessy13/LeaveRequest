@@ -25,9 +25,9 @@ body {
     padding-left: 24px;
     border-radius: var(--border-radius);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e8e8e8;
+    margin-left: 24px;
     min-width: 1392px;
-    width: 100%;
+    
 }
 
 /* --- Header --- */
@@ -136,7 +136,7 @@ body {
 
 .leaveForm-textarea {
 
-    min-width: 1450px;
+   min-width: 1420px;
     height: 90px;
     resize: vertical;
     padding-top: 36px;
@@ -354,7 +354,7 @@ body {
 
 .leaveForm-button-cancel {
     background-color: #FFFFFF;
-    color: var(--primary-theme-color);
+    color: #202224;
 }
 
 .leaveForm-button-cancel:hover {
@@ -365,7 +365,7 @@ body {
     background-color: #38AEE0;
     border-color: #38AEE0;
     color: #fff;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 @media (max-width: 1200px) {

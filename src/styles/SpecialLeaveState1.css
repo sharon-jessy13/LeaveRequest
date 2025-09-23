@@ -10,10 +10,10 @@ body {
 .form-container {
     background-color: #F9FAFB;
     border-radius: 8px;
-   
+    margin-left: 24px;
     
     min-width: 1392px;
-    width: 100%;
+    
     
 }
 
@@ -260,7 +260,7 @@ textarea { height: auto; }
 }
 
 .special-textarea{
-    min-width: 1445px;
+    min-width: 1420px;
     height: 90px;
     font-size: 14px;
     font-weight: 400;
@@ -308,7 +308,7 @@ textarea { height: auto; }
 .btn-secondary {
     background-color: #fff;
     border-color: #38AEE0;
-    color: #38AEE0;
+    color:#202224;
 }
 .btn-primary {
   background-color: #38AEE0;
