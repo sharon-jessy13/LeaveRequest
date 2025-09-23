@@ -190,7 +190,7 @@ textarea { height: auto; }
   
   background-image: url("../Assets/Vector.svg");
   
-
+color: #000000;
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 1em;
@@ -209,7 +209,7 @@ textarea { height: auto; }
   font-size: 16px;
   box-sizing: border-box;
   width: 100%;
-  
+  color: #000000;
   /* Add your custom calendar icon as a background image */
   background-image: url("../Assets/Right Content.svg");
   background-repeat: no-repeat;
