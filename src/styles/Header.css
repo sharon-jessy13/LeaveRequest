@@ -1,13 +1,12 @@
 .hr-header-container {
-    padding-left: 0;
+    padding-left: 10px;
     padding-right: 32px;
     background-color: #fff;
     min-width: 1446px;
-    max-width: none;
-    margin-top: 60px;
     width: 100%;
+    margin-top: 60px;
     padding-bottom: 20px;
-    
+    box-sizing: border-box;
 }
 
 .breadcrumb {
@@ -135,6 +134,7 @@
     border-radius: 6px;
     border: 1px solid #E8E7E3;
     padding: 5px 10px;
+    margin-left: 24px;
 }
 
 
@@ -142,6 +142,7 @@
     color: #202224;
     font-size: 14px;
     font-weight: 700;
+    
 }
 
 
@@ -150,44 +151,89 @@
     gap: 10px;
 }
 
-.radio-group-horizontal input[type="radio"] {
-    width: 16px;
-    /* Adjust size as needed */
-    height: 16px;
-    /* Adjust size as needed*/
+/* --- Base Styling for the Label --- */
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 18px;
+  font-family: sans-serif;
+  color: #6E6E6E; 
+  font-size: 14px;
 }
 
-
-
-.radio-label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+/* --- Hide the Actual Radio Button --- */
+.radio-label input[type="radio"] {
+  display: none;
 }
 
 
 .radio-text {
-    margin-left: 8px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #202224;
+  position: relative;
+  padding-left: 28px; /* Make space for the custom radio button */
+  transition: color 0.2s ease-in-out;
+}
+
+
+.radio-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #A9A8AA; 
+  border-radius: 50%;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+
+.radio-text::after {
+  content: '';
+  position: absolute;
+  left: 5px; /* Position inside the outer circle */
+  top: 50%;
+  transform: translateY(-50%) scale(0); /* Hidden by default */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #38AEE0; /* Color of the dot */
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.radio-label input[type="radio"]:checked + .radio-text::before {
+  border-color:  #38AEE0; 
+}
+
+
+.radio-label input[type="radio"]:checked + .radio-text::after {
+  transform: translateY(-50%) scale(1);
+}
+
+
+.radio-label input[type="radio"]:checked + .radio-text {
+  color: #202224;
+  font-weight: bold;
 }
 
 .leave-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-left: 24px;
+    gap: 20px;
     min-width: 1392px;
     height: 84px;
     width: 100%;
+    
+  
 }
-
 .card {
     border-radius: 10px;
     width: 186px;
     height: 84px;
-    margin-right: 10px;
+   
     gap: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     
@@ -196,7 +242,7 @@
     flex-direction: column;   
     justify-content: center; 
     align-items: center;     
-    text-align: start; 
+    text-align: start ; 
 }
 
 .card-arrow {
@@ -218,6 +264,7 @@
     font-size:14px;
     font-weight: 400;
     color: #4B5563;
+    text-align: start ; 
     
 }
 
@@ -228,7 +275,7 @@
     
 }
 
-/* 🎨 Unique colors for each leave type */
+
 .cl {
     background: #EFF6FF;
     margin-left: 20px;

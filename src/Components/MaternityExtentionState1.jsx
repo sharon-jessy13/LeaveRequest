@@ -108,7 +108,7 @@ const MaternityExtentionState1 = () => {
                         <div className="col-span-4">
                             <div className="maternityExtention-form-group">
                                 <label className="maternityExtention-form-label">To Date</label>
-                                <input type="date" name="toDate" className="custom-date-input" value={formData.toDate} onChange={handleChange} />
+                                <input type="date" id="toDate" name="toDate" className="custom-date-input" value={formData.toDate} onChange={handleChange} />
                             </div>
                         </div>
 
